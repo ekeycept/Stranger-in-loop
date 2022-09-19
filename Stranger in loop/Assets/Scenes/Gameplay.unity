@@ -767,7 +767,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &710781846
 GameObject:
@@ -1136,13 +1136,82 @@ RectTransform:
   - {fileID: 937749161}
   - {fileID: 760462810}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1001 &918246189
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7177756154033448165, guid: dd5feda6afea17941a51a1d50edd3904,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177756154033448165, guid: dd5feda6afea17941a51a1d50edd3904,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177756154033448165, guid: dd5feda6afea17941a51a1d50edd3904,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177756154033448165, guid: dd5feda6afea17941a51a1d50edd3904,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177756154033448165, guid: dd5feda6afea17941a51a1d50edd3904,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177756154033448165, guid: dd5feda6afea17941a51a1d50edd3904,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177756154033448165, guid: dd5feda6afea17941a51a1d50edd3904,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177756154033448165, guid: dd5feda6afea17941a51a1d50edd3904,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177756154033448165, guid: dd5feda6afea17941a51a1d50edd3904,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177756154033448165, guid: dd5feda6afea17941a51a1d50edd3904,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177756154033448165, guid: dd5feda6afea17941a51a1d50edd3904,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7554598837188951647, guid: dd5feda6afea17941a51a1d50edd3904,
+        type: 3}
+      propertyPath: m_Name
+      value: Grass Tile (Full)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dd5feda6afea17941a51a1d50edd3904, type: 3}
 --- !u!1 &921584884
 GameObject:
   m_ObjectHideFlags: 0
@@ -1364,7 +1433,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1471857751}
         m_TargetAssemblyTypeName: GameplayManager, Assembly-CSharp
-        m_MethodName: ToPlay
+        m_MethodName: Pause
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1627,6 +1696,8 @@ MonoBehaviour:
   platformPrefab:
   - {fileID: 7554598837188951647, guid: dd5feda6afea17941a51a1d50edd3904, type: 3}
   - {fileID: 3970802269282083138, guid: 816bd86b56a738543b02adb7dc02587d, type: 3}
+  - {fileID: 1651315522642021280, guid: b773d6d12894b7b48b43afa53c6f9587, type: 3}
+  - {fileID: 7767455625543623915, guid: d359d83ace8fa03478b19d70ce9f790d, type: 3}
 --- !u!114 &1471857749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1766,7 +1837,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2007163400
 GameObject:
@@ -1948,7 +2019,7 @@ Transform:
   - {fileID: 963194228}
   - {fileID: 1692196050}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2047073737
 MonoBehaviour:
@@ -1962,7 +2033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd9f1f024091dbc44b291c4a93ecb37a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 12
+  speed: 10
   jumpHeight: 1
   gravity: -9.8
   checkGroundRadius: 0.4
@@ -1986,7 +2057,7 @@ CharacterController:
   m_Height: 2
   m_Radius: 0.5000001
   m_SlopeLimit: 45
-  m_StepOffset: 0.3
+  m_StepOffset: 0.4
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
