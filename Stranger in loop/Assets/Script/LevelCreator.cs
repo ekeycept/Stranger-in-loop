@@ -10,7 +10,7 @@ public class LevelCreator : MonoBehaviour
 
     void Start()
     {
-        for (int i = 0; i < 15; i++)
+        for (int i = 0; i < 25; i++)
         {
             randomNumber = Random.Range(0, 2);
             Instantiate(platformPrefab[randomNumber], new Vector3(0, 0, (float)(i * 4.6)), Quaternion.Euler(-90, 0, 0));
