@@ -37,28 +37,28 @@ public class LevelCreator : MonoBehaviour
 
         if (currentPos < 100)
         {
-            AddPlatforms(platformPrefab, currentPos, lastPos);
+            AddPlatforms(platformPrefab, currentPos, ref lastPos);     
         }
         else if (currentPos > 100 && currentPos < 200)
         {
-            AddPlatforms(platformPrefabSecond, currentPos, lastPos);
+            AddPlatforms(platformPrefabSecond, currentPos, ref lastPos);
         }
         else if (currentPos > 200 && currentPos < 300)
         {
-            AddPlatforms(platformPrefabThird, currentPos, lastPos);
+            AddPlatforms(platformPrefabThird, currentPos, ref lastPos);
         }
         else if (currentPos > 300 && currentPos < 400)
         {
-            AddPlatforms(platformPrefabFourth, currentPos, lastPos);
+            AddPlatforms(platformPrefabFourth, currentPos, ref lastPos);
         }
         else if (currentPos > 400)
         {
-            AddPlatforms(platformPrefabFifth, currentPos, lastPos);
+            AddPlatforms(platformPrefabFifth, currentPos, ref lastPos);
         }
 
     }
 
-    private float AddPlatforms(GameObject[] prefabs, float currentPos, float lastPos)
+    private void AddPlatforms(GameObject[] prefabs, int currentPos, ref int lastPos)
     {
         if ((currentPos - lastPos) >= 25)
         {
@@ -67,12 +67,11 @@ public class LevelCreator : MonoBehaviour
             {
                 randomPrefab = UnityEngine.Random.Range(0, 3);
                 randomX = UnityEngine.Random.Range(-5, 5);
-                platforms[j * 25 + i] = Instantiate(platformPrefabThird[randomPrefab], new Vector3(randomX, 0, platforms[j * 25 - 1 + i].transform.position.z + 11), Quaternion.Euler(-90, 0, 0));
+                platforms[j * 25 + i] = Instantiate(prefabs[randomPrefab], new Vector3(randomX, 0, platforms[j * 25 - 1 + i].transform.position.z + 11), Quaternion.Euler(-90, 0, 0));
             }
             Debug.Log("New platforms created");
             j++;
             lastPos = currentPos;
-            return lastPos;
         }
     }
 
