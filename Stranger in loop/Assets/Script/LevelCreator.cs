@@ -58,7 +58,7 @@ public class LevelCreator : MonoBehaviour
 
     }
 
-    private void AddPlatforms(GameObject[] prefabs, float currentPos, float lastPos)
+    private float AddPlatforms(GameObject[] prefabs, float currentPos, float lastPos)
     {
         if ((currentPos - lastPos) >= 25)
         {
@@ -72,6 +72,7 @@ public class LevelCreator : MonoBehaviour
             Debug.Log("New platforms created");
             j++;
             lastPos = currentPos;
+            return lastPos;
         }
     }
 
