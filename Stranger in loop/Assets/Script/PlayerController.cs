@@ -63,5 +63,4 @@ public class PlayerController : MonoBehaviour
         if(IsOnTheGround())
             velocity = Mathf.Sqrt(jumpHeight * -2 * gravity);
     }
-
 }

@@ -11,18 +11,20 @@ public class LevelCreator : MonoBehaviour
     [SerializeField] private GameObject[] platformPrefabThird;
     [SerializeField] private GameObject[] platformPrefabFourth;
     [SerializeField] private GameObject[] platformPrefabFifth;
+    [SerializeField] private GameObject[] decoratingPlatformPrefab;
     [SerializeField] private GameObject[] platforms;
     [SerializeField] private Text Score;
     [SerializeField] private Transform Player;
     [SerializeField] private int lastPos = 0;
-    private int j = 2;
+    private int j = 1;
     private int randomPrefab;
     private int randomX;
     private int i;
+    private int randomMovingTile;
 
     void Start()
     {
-        for (i = 0; i < 50; i++)
+        for (i = 0; i < 25; i++)
         {
             randomPrefab = UnityEngine.Random.Range(0, 3);
             randomX = UnityEngine.Random.Range(-5, 5);
@@ -63,17 +65,28 @@ public class LevelCreator : MonoBehaviour
         if ((currentPos - lastPos) >= 25)
         {
             Array.Resize(ref platforms, platforms.Length + 25);
-            for (i = 0; i < 25; i++)
-            {
-                randomPrefab = UnityEngine.Random.Range(0, 3);
-                randomX = UnityEngine.Random.Range(-5, 5);
-                platforms[j * 25 + i] = Instantiate(prefabs[randomPrefab], new Vector3(randomX, 0, platforms[j * 25 - 1 + i].transform.position.z + 11), Quaternion.Euler(-90, 0, 0));
-            }
+                for (i = 0; i < 25; i++)
+                {
+                    randomMovingTile = UnityEngine.Random.Range(0, 2);
+                    if (randomMovingTile == 0)
+                    {
+                        randomPrefab = UnityEngine.Random.Range(3, 5);
+                        randomX = UnityEngine.Random.Range(-5, 5);
+                        platforms[j * 25 + i] = Instantiate(prefabs[randomPrefab], new Vector3(randomX, 0, platforms[j * 25 - 1 + i].transform.position.z + 11), Quaternion.Euler(-90, 0, 0));
+                    }
+                    else
+                    {
+                        randomPrefab = UnityEngine.Random.Range(0, 3);
+                        randomX = UnityEngine.Random.Range(-5, 5);
+                        platforms[j * 25 + i] = Instantiate(prefabs[randomPrefab], new Vector3(randomX, 0, platforms[j * 25 - 1 + i].transform.position.z + 11), Quaternion.Euler(-90, 0, 0));
+                    }
+                }
             Debug.Log("New platforms created");
             j++;
             lastPos = currentPos;
         }
     }
+
 
     private IEnumerator LoopFunction(float waitTime)
     {

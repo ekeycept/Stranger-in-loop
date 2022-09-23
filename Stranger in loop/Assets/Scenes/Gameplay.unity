@@ -1698,7 +1698,16 @@ MonoBehaviour:
   - {fileID: 7554598837188951647, guid: dd5feda6afea17941a51a1d50edd3904, type: 3}
   - {fileID: 3970802269282083138, guid: 816bd86b56a738543b02adb7dc02587d, type: 3}
   - {fileID: 1651315522642021280, guid: b773d6d12894b7b48b43afa53c6f9587, type: 3}
-  platformPrefabSecond: []
+  - {fileID: 6890097741310374253, guid: 5a92cf826286e1845a0508c1f3ae4746, type: 3}
+  - {fileID: 4966284799724587110, guid: e705c353e2f40d74fa658e08e9ab0a92, type: 3}
+  - {fileID: 2581075331897430282, guid: aa9328b50466a6e4985f383ecec342bb, type: 3}
+  platformPrefabSecond:
+  - {fileID: 7554598837188951647, guid: dd5feda6afea17941a51a1d50edd3904, type: 3}
+  - {fileID: 3970802269282083138, guid: 816bd86b56a738543b02adb7dc02587d, type: 3}
+  - {fileID: 1651315522642021280, guid: b773d6d12894b7b48b43afa53c6f9587, type: 3}
+  - {fileID: 6890097741310374253, guid: 5a92cf826286e1845a0508c1f3ae4746, type: 3}
+  - {fileID: 4966284799724587110, guid: e705c353e2f40d74fa658e08e9ab0a92, type: 3}
+  - {fileID: 2581075331897430282, guid: aa9328b50466a6e4985f383ecec342bb, type: 3}
   platformPrefabThird: []
   platformPrefabFourth: []
   platformPrefabFifth: []
@@ -2009,9 +2018,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5000001
-  m_Height: 2
+  m_Height: 2.0110161
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_Center: {x: 0.000000059604645, y: -0.005508065, z: -0.00000011920929}
 --- !u!23 &2047073734
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2070,7 +2079,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2047073732}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalPosition: {x: 0, y: 1.886, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2116,6 +2125,6 @@ CharacterController:
   m_Radius: 0.5000001
   m_SlopeLimit: 45
   m_StepOffset: 0.4
-  m_SkinWidth: 0.08
+  m_SkinWidth: 0.0001
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
