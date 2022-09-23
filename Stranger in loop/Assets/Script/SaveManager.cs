@@ -22,7 +22,7 @@ public class SaveManager : MonoBehaviour
             SaveScore();
     }
 
-    private void SaveScore()
+    public void SaveScore()
     {
         if (Convert.ToInt32(highscore.text) < Convert.ToInt32(scoreText.text))
         {

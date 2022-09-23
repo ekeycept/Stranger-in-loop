@@ -184,7 +184,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 1, b: 0.37706995, a: 1}
+    m_NormalColor: {r: 0.31230274, g: 0.8396226, b: 0.30416512, a: 1}
     m_HighlightedColor: {r: 0.79215693, g: 0.5882353, b: 1, a: 1}
     m_PressedColor: {r: 0.6304763, g: 0.2679245, b: 1, a: 1}
     m_SelectedColor: {r: 0.79215693, g: 0.5882353, b: 1, a: 1}
@@ -778,7 +778,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.4943396, g: 0.5989772, b: 1, a: 0}
+  m_BackGroundColor: {r: 0.50953424, g: 0.37545386, b: 0.8396226, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

@@ -126,14 +126,20 @@ public class LevelCreator : MonoBehaviour
                     randomPrefab = UnityEngine.Random.Range(0, 4);
                     randomX = UnityEngine.Random.Range(-25, -15);
                     randomY = UnityEngine.Random.Range(-10, 10);
-                    decoratingPlatforms[100 * k + i] = Instantiate(prefab[randomPrefab], new Vector3(randomX, randomY, decoratingPlatforms[k * 100 - 1 + i].transform.position.z + 30), Quaternion.Euler(-90, 0, 0));
+                    randomRotX = UnityEngine.Random.Range(-90, 90);
+                    randomRotY = UnityEngine.Random.Range(-90, 90);
+                    randomRotZ = UnityEngine.Random.Range(-90, 90);
+                    decoratingPlatforms[100 * k + i] = Instantiate(prefab[randomPrefab], new Vector3(randomX, randomY, decoratingPlatforms[k * 100 - 1 + i].transform.position.z + 30), Quaternion.Euler(randomRotX, randomRotY, randomRotZ));
                 }
                 if (randomSide == 1)
                 {
                     randomPrefab = UnityEngine.Random.Range(0, 4);
                     randomX = UnityEngine.Random.Range(15, 25);
                     randomY = UnityEngine.Random.Range(-10, 10);
-                    decoratingPlatforms[100 * k + i] = Instantiate(prefab[randomPrefab], new Vector3(randomX, randomY, decoratingPlatforms[k * 100 - 1 + i].transform.position.z + 30), Quaternion.Euler(-90, 0, 0));
+                    randomRotX = UnityEngine.Random.Range(-90, 90);
+                    randomRotY = UnityEngine.Random.Range(-90, 90);
+                    randomRotZ = UnityEngine.Random.Range(-90, 90);
+                    decoratingPlatforms[100 * k + i] = Instantiate(prefab[randomPrefab], new Vector3(randomX, randomY, decoratingPlatforms[k * 100 - 1 + i].transform.position.z + 30), Quaternion.Euler(randomRotX, randomRotY, randomRotZ));
                 }
             }
             Debug.Log("Created decorating platforms!");

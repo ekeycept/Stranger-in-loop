@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameplayManager : MonoBehaviour
@@ -32,6 +33,12 @@ public class GameplayManager : MonoBehaviour
             ExitButton.gameObject.SetActive(false);
         }
     }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene("Gameplay");
+    }
+
     public void ToExit()
     {
         Application.Quit();

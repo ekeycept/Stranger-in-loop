@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform groundCheckerPivot;
     [SerializeField] private Joystick joystick;
     [SerializeField] private GameObject jumpButton;
+    [SerializeField] private Button RestartButton;
+    [SerializeField] private Button ExitButton;
     private void Awake()
     {
         _CharacterController = GetComponent<CharacterController>();
@@ -62,5 +65,16 @@ public class PlayerController : MonoBehaviour
     {
         if(IsOnTheGround())
             velocity = Mathf.Sqrt(jumpHeight * -2 * gravity);
+    }
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.gameObject.CompareTag("DeathPlatform"))
+        {
+            Destroy(gameObject);
+            RestartButton.gameObject.SetActive(true);
+            ExitButton.gameObject.SetActive(true);
+            GameObject.FindGameObjectWithTag("LevelManager").GetComponent<SaveManager>().SaveScore();
+        }
     }
 }
