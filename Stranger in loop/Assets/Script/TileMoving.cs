@@ -4,23 +4,19 @@ using UnityEngine;
 
 public class TileMoving : MonoBehaviour
 {
-    private Vector3 lastPos;
-    private Vector3 currentPos;
-    private Rigidbody rb;
     private float speed = 5f;
+    public float rightEnd { get;  set; }
+    public float leftEnd { get; set; }
     private bool isMovingRight = false;
 
-    private void Start()
-    {
-        rb = GetComponent<Rigidbody>();
-    }
+
     void Update()
     {
-        if(transform.position.x > 5)
+        if(transform.position.x > rightEnd)
         {
             isMovingRight = false;
         }
-        else if (transform.position.x < -5)
+        else if (transform.position.x < leftEnd)
         {
             isMovingRight = true;
         }

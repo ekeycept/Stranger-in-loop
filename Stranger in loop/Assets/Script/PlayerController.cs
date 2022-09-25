@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 moveDirection2;
     private float velocity;
 
-    [SerializeField] private float speed = 10f;
+    [SerializeField] private int speed = 10;
     [SerializeField] private int jumpHeight = 2;
     [SerializeField] private float gravity = -9.8f;
     [SerializeField] private float checkGroundRadius = 0.4f;
@@ -52,13 +52,13 @@ public class PlayerController : MonoBehaviour
 
     private void Move(Vector3 direction)
     {
-        _CharacterController.Move(direction * speed * Time.deltaTime);
+        _CharacterController.Move(speed * Time.deltaTime * direction);
     }
 
     private void DoGravity()
     {
         velocity += gravity * Time.deltaTime;
-        _CharacterController.Move(Vector3.up * velocity * Time.deltaTime);
+        _CharacterController.Move(velocity * Time.deltaTime * Vector3.up);
     }
 
     public void Jump()
