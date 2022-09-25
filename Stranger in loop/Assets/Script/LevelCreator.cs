@@ -119,8 +119,8 @@ public class LevelCreator : MonoBehaviour
                         randomPrefab = UnityEngine.Random.Range(3, 5);
                         randomX = UnityEngine.Random.Range(-5, 5);
                         platforms[j * 25 + i] = Instantiate(prefabs[randomPrefab], new Vector3(randomX, 0, platforms[j * 25 - 1 + i].transform.position.z + 11), Quaternion.Euler(-90, 0, 0));
-                        platforms[j * 25 + i].gameObject.GetComponent<TileMoving>().rightEnd = UnityEngine.Random.Range(3, 15);
-                        platforms[j * 25 + i].gameObject.GetComponent<TileMoving>().leftEnd = UnityEngine.Random.Range(-15, -3);
+                        platforms[j * 25 + i].GetComponent<TileMoving>().rightEnd = UnityEngine.Random.Range(3, 15);
+                        platforms[j * 25 + i].GetComponent<TileMoving>().leftEnd = UnityEngine.Random.Range(-15, -3);
                 }
                 else
                     {
