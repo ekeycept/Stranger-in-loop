@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
-guid: d8790c6f3c9d1984783ffb50b118710f
-=======
-guid: 451b8220091271e4da01ef1ea7896a94
->>>>>>> Stashed changes
+guid: fe848ab166d604e41a38f8ab022d2d89
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -58,11 +54,7 @@ TextureImporter:
   alphaIsTransparency: 0
   spriteTessellationDetail: -1
   textureType: 0
-<<<<<<< Updated upstream
-  textureShape: 2
-=======
   textureShape: 1
->>>>>>> Stashed changes
   singleChannelComponent: 0
   flipbookRows: 1
   flipbookColumns: 1
@@ -75,10 +67,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
