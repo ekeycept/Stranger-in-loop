@@ -9,6 +9,8 @@ public class LevelCreator : MonoBehaviour
     [SerializeField] private GameObject[] platformPrefab;
     [SerializeField] private GameObject[] platformPrefabSecond;
     [SerializeField] private GameObject[] platformPrefabThird;
+    [SerializeField] private GameObject[] platformPrefabFourth;
+    [SerializeField] private GameObject[] platformPrefabFifth;
     [SerializeField] private GameObject[] decoratingThingsPrefab;
     [SerializeField] private GameObject[] platforms;
     [SerializeField] private GameObject[] decoratingThings;
@@ -27,7 +29,7 @@ public class LevelCreator : MonoBehaviour
     private int i;
     private int randomMovingTile;
     private int randomSide;
-    private int k = 1;
+    private int k;
     int startPos = 0;
     int g = 1;
 
@@ -86,25 +88,22 @@ public class LevelCreator : MonoBehaviour
     {
         int currentPos = Convert.ToInt32(Player.position.z / 4.6f);
 
-        if (currentPos <= 300)
+        if (currentPos <= 100)
         {
-            AddDecoratingThings(decoratingThingsPrefab, currentPos, ref startPos, k);
+            AddDecoratingThings(decoratingThingsPrefab, currentPos, ref startPos, 1);
             AddPlatforms(platformPrefab, currentPos, ref lastPos);
             AddDecoratingPlatforms(decoratingPlatformsPrefab, currentPos, ref lastPos);
         }
-        else if (currentPos > 300 && currentPos < 600)
-        {
+        else if (currentPos > 100 && currentPos < 200)
             AddPlatforms(platformPrefabSecond, currentPos, ref lastPos);
-            AddDecoratingThings(decoratingThingsPrefab, currentPos, ref startPos, k);
-            AddDecoratingPlatforms(decoratingPlatformsPrefab, currentPos, ref lastPos);
-        }
-        else if (currentPos > 600)
-        {
+        else if (currentPos > 200 && currentPos < 300)
             AddPlatforms(platformPrefabThird, currentPos, ref lastPos);
-            AddDecoratingThings(decoratingThingsPrefab, currentPos, ref startPos, k);
-            AddDecoratingPlatforms(decoratingPlatformsPrefab, currentPos, ref lastPos);
+        else if (currentPos > 300 && currentPos < 400)
+            AddPlatforms(platformPrefabFourth, currentPos, ref lastPos);
+        else if (currentPos > 400)
+            AddPlatforms(platformPrefabFifth, currentPos, ref lastPos);
 
-        }
+
     }
 
     private void AddPlatforms(GameObject[] prefabs, int currentPos, ref int lastPos)
@@ -165,8 +164,6 @@ public class LevelCreator : MonoBehaviour
                     decoratingThings[100 * k + i] = Instantiate(prefab[randomPrefab], new Vector3(randomX, randomY, decoratingThings[k * 100 - 1 + i].transform.position.z + 30), Quaternion.Euler(randomRotX, randomRotY, randomRotZ));
                 }
             }
-            k++;
-            Debug.Log(k);
             Debug.Log("Created decorating platforms!");
             startPos += 100;
 
@@ -181,16 +178,16 @@ public class LevelCreator : MonoBehaviour
 
             for (int i = 0; i < 10; i++)
             {
-                randomSide = UnityEngine.Random.Range(0, 3);
+                randomSide = UnityEngine.Random.Range(0, 2);
                 if (randomSide == 0)
                 {
-                    randomPrefab = UnityEngine.Random.Range(0, 3);
+                    randomPrefab = UnityEngine.Random.Range(0, 2);
                     randomX = UnityEngine.Random.Range(-40, -20);
                     decoratingPlatforms[10 * g + i] = Instantiate(prefab[randomPrefab], new Vector3(randomX, 10, decoratingPlatforms[10 * g - 1 + i].transform.position.z + 50), Quaternion.Euler(-90, 0, 0));
                 }
                 if (randomSide == 1)
                 {
-                    randomPrefab = UnityEngine.Random.Range(0, 3);
+                    randomPrefab = UnityEngine.Random.Range(0, 2);
                     randomX = UnityEngine.Random.Range(20, 40);
                     decoratingPlatforms[10 * g + i] = Instantiate(prefab[randomPrefab], new Vector3(randomX, 10, decoratingPlatforms[10 * g - 1 + i].transform.position.z + 50), Quaternion.Euler(-90, 0, 0));
                 }
@@ -207,6 +204,7 @@ public class LevelCreator : MonoBehaviour
         while (i >= 0)
         {
             Destroy(platforms[i]);
+            Destroy(decoratingPlatforms[i]);
             Destroy(decoratingThings[i]);
             yield return new WaitForSeconds(waitTime);
             i++;
