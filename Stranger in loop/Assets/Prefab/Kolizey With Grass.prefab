@@ -461,10 +461,28 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2b30890de88d7ce448de2b5b577edce4,
         type: 3}
       propertyPath: m_Name
-      value: kolizey
+      value: Kolizey With Grass
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b30890de88d7ce448de2b5b577edce4, type: 3}
+--- !u!1 &8109463751324997537 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2b30890de88d7ce448de2b5b577edce4,
+    type: 3}
+  m_PrefabInstance: {fileID: 8956520019545500400}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6217927777177901104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109463751324997537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b255faf7ed4a1bf42891add0c0ddc1f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8917491185276308763 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2b30890de88d7ce448de2b5b577edce4,

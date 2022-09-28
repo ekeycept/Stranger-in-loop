@@ -75,7 +75,43 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2648c9be74ba7d3498f6ebd765bc05df,
         type: 3}
       propertyPath: m_Name
-      value: cyberpunk tile2
+      value: cyberpunk tile2 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2648c9be74ba7d3498f6ebd765bc05df,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2648c9be74ba7d3498f6ebd765bc05df, type: 3}
+--- !u!1 &3307764090882560381 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2648c9be74ba7d3498f6ebd765bc05df,
+    type: 3}
+  m_PrefabInstance: {fileID: 2388843199357791276}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &7112507823081909580
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3307764090882560381}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0211027, y: 0.021102697, z: 0.021376703}
+  m_Center: {x: 0, y: 0, z: 0.0006328387}
+--- !u!114 &-4556233170612370859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3307764090882560381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b255faf7ed4a1bf42891add0c0ddc1f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

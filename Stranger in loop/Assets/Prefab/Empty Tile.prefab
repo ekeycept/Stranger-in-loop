@@ -70,7 +70,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7d6bde6800f03d542b8cea7b91b93c11,
         type: 3}
       propertyPath: m_Name
-      value: stone tile
+      value: Empty Tile
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7d6bde6800f03d542b8cea7b91b93c11,
         type: 3}
@@ -80,3 +80,21 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: -7511558181221131132, guid: 7d6bde6800f03d542b8cea7b91b93c11, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7d6bde6800f03d542b8cea7b91b93c11, type: 3}
+--- !u!1 &7767455625543623915 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7d6bde6800f03d542b8cea7b91b93c11,
+    type: 3}
+  m_PrefabInstance: {fileID: 7424995894479428026}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-572210563357872992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7767455625543623915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b255faf7ed4a1bf42891add0c0ddc1f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

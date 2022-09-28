@@ -75,7 +75,25 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: cf5ad814710fe0142868504a5e00245e,
         type: 3}
       propertyPath: m_Name
-      value: bochka
+      value: Barrel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf5ad814710fe0142868504a5e00245e, type: 3}
+--- !u!1 &8745347592673033205 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: cf5ad814710fe0142868504a5e00245e,
+    type: 3}
+  m_PrefabInstance: {fileID: 8474893365209122468}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8144087022658173051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8745347592673033205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b255faf7ed4a1bf42891add0c0ddc1f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4934051361795362064
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2742493560054258981, guid: 396d1bd797e78144c9f2b454f7cd067f,
+        type: 3}
+      propertyPath: m_Name
+      value: Moving Cyberpunk 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3261903486683760543, guid: 396d1bd797e78144c9f2b454f7cd067f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3261903486683760543, guid: 396d1bd797e78144c9f2b454f7cd067f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.662935
+      objectReference: {fileID: 0}
+    - target: {fileID: 3261903486683760543, guid: 396d1bd797e78144c9f2b454f7cd067f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.52850753
+      objectReference: {fileID: 0}
+    - target: {fileID: 3261903486683760543, guid: 396d1bd797e78144c9f2b454f7cd067f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.533098
+      objectReference: {fileID: 0}
+    - target: {fileID: 3261903486683760543, guid: 396d1bd797e78144c9f2b454f7cd067f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 3261903486683760543, guid: 396d1bd797e78144c9f2b454f7cd067f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3261903486683760543, guid: 396d1bd797e78144c9f2b454f7cd067f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3261903486683760543, guid: 396d1bd797e78144c9f2b454f7cd067f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3261903486683760543, guid: 396d1bd797e78144c9f2b454f7cd067f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3261903486683760543, guid: 396d1bd797e78144c9f2b454f7cd067f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3261903486683760543, guid: 396d1bd797e78144c9f2b454f7cd067f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 396d1bd797e78144c9f2b454f7cd067f, type: 3}
+--- !u!1 &7094874543823310901 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2742493560054258981, guid: 396d1bd797e78144c9f2b454f7cd067f,
+    type: 3}
+  m_PrefabInstance: {fileID: 4934051361795362064}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4955724438727777532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7094874543823310901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb7136ffbc7dc904087a7f70475bf712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8133080323790858570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7094874543823310901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b255faf7ed4a1bf42891add0c0ddc1f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
