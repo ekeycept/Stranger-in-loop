@@ -2097,33 +2097,19 @@ MonoBehaviour:
   - {fileID: 4966284799724587110, guid: e705c353e2f40d74fa658e08e9ab0a92, type: 3}
   - {fileID: 2581075331897430282, guid: aa9328b50466a6e4985f383ecec342bb, type: 3}
   platformPrefabSecond:
-  - {fileID: 7554598837188951647, guid: dd5feda6afea17941a51a1d50edd3904, type: 3}
+  - {fileID: 5839682638240568017, guid: 0061e872879a84140b74ab9db10b6b6c, type: 3}
   - {fileID: 3970802269282083138, guid: 816bd86b56a738543b02adb7dc02587d, type: 3}
   - {fileID: 1651315522642021280, guid: b773d6d12894b7b48b43afa53c6f9587, type: 3}
-  - {fileID: 6890097741310374253, guid: 5a92cf826286e1845a0508c1f3ae4746, type: 3}
+  - {fileID: 5626514052804101956, guid: 75151d037bd551041b8e3a851aa640bd, type: 3}
   - {fileID: 4966284799724587110, guid: e705c353e2f40d74fa658e08e9ab0a92, type: 3}
   - {fileID: 2581075331897430282, guid: aa9328b50466a6e4985f383ecec342bb, type: 3}
   platformPrefabThird:
-  - {fileID: 7554598837188951647, guid: dd5feda6afea17941a51a1d50edd3904, type: 3}
-  - {fileID: 1651315522642021280, guid: b773d6d12894b7b48b43afa53c6f9587, type: 3}
-  - {fileID: 3970802269282083138, guid: 816bd86b56a738543b02adb7dc02587d, type: 3}
-  - {fileID: 6890097741310374253, guid: 5a92cf826286e1845a0508c1f3ae4746, type: 3}
-  - {fileID: 4966284799724587110, guid: e705c353e2f40d74fa658e08e9ab0a92, type: 3}
-  - {fileID: 3970802269282083138, guid: 816bd86b56a738543b02adb7dc02587d, type: 3}
-  platformPrefabFourth:
-  - {fileID: 7554598837188951647, guid: dd5feda6afea17941a51a1d50edd3904, type: 3}
-  - {fileID: 1651315522642021280, guid: b773d6d12894b7b48b43afa53c6f9587, type: 3}
-  - {fileID: 3970802269282083138, guid: 816bd86b56a738543b02adb7dc02587d, type: 3}
-  - {fileID: 6890097741310374253, guid: 5a92cf826286e1845a0508c1f3ae4746, type: 3}
-  - {fileID: 4966284799724587110, guid: e705c353e2f40d74fa658e08e9ab0a92, type: 3}
-  - {fileID: 2581075331897430282, guid: aa9328b50466a6e4985f383ecec342bb, type: 3}
-  platformPrefabFifth:
-  - {fileID: 7554598837188951647, guid: dd5feda6afea17941a51a1d50edd3904, type: 3}
-  - {fileID: 1651315522642021280, guid: b773d6d12894b7b48b43afa53c6f9587, type: 3}
-  - {fileID: 3970802269282083138, guid: 816bd86b56a738543b02adb7dc02587d, type: 3}
-  - {fileID: 6890097741310374253, guid: 5a92cf826286e1845a0508c1f3ae4746, type: 3}
-  - {fileID: 4966284799724587110, guid: e705c353e2f40d74fa658e08e9ab0a92, type: 3}
-  - {fileID: 2581075331897430282, guid: aa9328b50466a6e4985f383ecec342bb, type: 3}
+  - {fileID: 2742493560054258981, guid: 396d1bd797e78144c9f2b454f7cd067f, type: 3}
+  - {fileID: 3307764090882560381, guid: ff5aff3084b7c3b458f6aac94052d9bd, type: 3}
+  - {fileID: 4489714450973469364, guid: 55536b02bb03d8642bcbf56a77d01a41, type: 3}
+  - {fileID: 4982244508368213160, guid: de3b39fea997a6a4781d544efa5cf300, type: 3}
+  - {fileID: 7746625147732087117, guid: c75e2f0c2e4d6c549ab007a86ffbdfbf, type: 3}
+  - {fileID: 338804738163666795, guid: 40f2ef9a41cbbd24cb8ff13b403f5474, type: 3}
   decoratingThingsPrefab:
   - {fileID: 8745347592673033205, guid: 7b5bf460510c5c3459f1cf509b8be350, type: 3}
   - {fileID: 484469576043222752, guid: 2d5d50de85b6f4c4f8631f7337b42cd7, type: 3}
@@ -2385,6 +2371,7 @@ MonoBehaviour:
   decoratingPlatformsPrefab:
   - {fileID: 8109463751324997537, guid: ce37323f81cb75a4dbc44cebf0876a00, type: 3}
   - {fileID: 3607638552065568471, guid: 5556add12c4702c48bf8374a431bd55c, type: 3}
+  - {fileID: 3302259991570776013, guid: 0263cf57eec73c14bbc54e6241d36f98, type: 3}
   Score: {fileID: 573204487}
   Player: {fileID: 2047073736}
   lastPos: 0
