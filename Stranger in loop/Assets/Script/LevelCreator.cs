@@ -204,6 +204,8 @@ public class LevelCreator : MonoBehaviour
         while (i >= 0)
         {
             Destroy(platforms[i]);
+            Destroy(decoratingPlatforms[i]);
+            Destroy(decoratingThings[i]);
             yield return new WaitForSeconds(waitTime);
             i++;
         }
