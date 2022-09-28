@@ -33,7 +33,7 @@ public class LevelCreator : MonoBehaviour
 
     void Start()
     {
-        for (i = 0; i < 25; i++)
+        for (i = 1; i < 25; i++)
         {
             randomPrefab = UnityEngine.Random.Range(0, 3);
             randomX = UnityEngine.Random.Range(-5, 5);
@@ -79,7 +79,6 @@ public class LevelCreator : MonoBehaviour
                 decoratingPlatforms[i] = Instantiate(decoratingPlatformsPrefab[randomPrefab], new Vector3(randomX, 10, i * 50), Quaternion.Euler(-90, 0, 0));
             }
         }
-        StartCoroutine(LoopFunction(3));
     }
 
     private void Update()
@@ -204,17 +203,5 @@ public class LevelCreator : MonoBehaviour
                 }
                 g++;
             }
-    }
-
-    private IEnumerator LoopFunction(float waitTime)
-    {
-        int i = 0;
-        while (i >= 0)
-        {
-            Destroy(platforms[i]);
-            Destroy(decoratingThings[i]);
-            yield return new WaitForSeconds(waitTime);
-            i++;
-        }
     }
 }

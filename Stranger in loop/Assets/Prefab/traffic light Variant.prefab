@@ -92,6 +92,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: traffic light Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f1322cfc57e859e43a587910367e9f32,
+        type: 3}
+      propertyPath: m_TagString
+      value: ObjectToDelete
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1322cfc57e859e43a587910367e9f32, type: 3}
 --- !u!1 &8862953959613033948 stripped

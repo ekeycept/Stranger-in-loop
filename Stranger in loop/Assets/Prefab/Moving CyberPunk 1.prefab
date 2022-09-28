@@ -67,7 +67,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Moving CyberPunk 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 55536b02bb03d8642bcbf56a77d01a41, type: 3}
 --- !u!1 &3722826691688282971 stripped
 GameObject:
@@ -75,18 +76,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1001075270831706607}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &9074591667608060155
-MonoBehaviour:
+--- !u!65 &-1956857688064927795
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3722826691688282971}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb7136ffbc7dc904087a7f70475bf712, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  serializedVersion: 2
+  m_Size: {x: 0.021308603, y: 0.021308599, z: 0.021190198}
+  m_Center: {x: 0, y: -5.989838e-19, z: 0.0005951037}
 --- !u!114 &-5016997793551500844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97,5 +99,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b255faf7ed4a1bf42891add0c0ddc1f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &9074591667608060155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3722826691688282971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb7136ffbc7dc904087a7f70475bf712, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

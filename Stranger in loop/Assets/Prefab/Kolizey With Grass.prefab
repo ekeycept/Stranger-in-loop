@@ -463,6 +463,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kolizey With Grass
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2b30890de88d7ce448de2b5b577edce4,
+        type: 3}
+      propertyPath: m_TagString
+      value: ObjectToDelete
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b30890de88d7ce448de2b5b577edce4, type: 3}
 --- !u!1 &8109463751324997537 stripped

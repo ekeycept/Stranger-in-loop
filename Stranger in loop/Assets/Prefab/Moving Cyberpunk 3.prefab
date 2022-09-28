@@ -67,7 +67,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Moving Cyberpunk 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: ff5aff3084b7c3b458f6aac94052d9bd, type: 3}
 --- !u!1 &5365808531141653674 stripped
 GameObject:
@@ -75,18 +76,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7462648769317463511}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5293388127066923330
-MonoBehaviour:
+--- !u!65 &2857498593294743926
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5365808531141653674}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb7136ffbc7dc904087a7f70475bf712, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  serializedVersion: 2
+  m_Size: {x: 0.0211027, y: 0.021102697, z: 0.021376703}
+  m_Center: {x: 0, y: 0, z: 0.0006328387}
 --- !u!114 &-9152243426318882078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97,5 +99,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b255faf7ed4a1bf42891add0c0ddc1f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5293388127066923330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5365808531141653674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb7136ffbc7dc904087a7f70475bf712, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

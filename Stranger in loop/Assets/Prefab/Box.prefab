@@ -77,6 +77,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ab17697d5788e4846a07e92e3536022c,
+        type: 3}
+      propertyPath: m_TagString
+      value: ObjectToDelete
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab17697d5788e4846a07e92e3536022c, type: 3}
 --- !u!1 &484469576043222752 stripped

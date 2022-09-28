@@ -77,6 +77,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: box2 Cyberpunk Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c6767f594a43fd743857e234d6566f7d,
+        type: 3}
+      propertyPath: m_TagString
+      value: ObjectToDelete
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6767f594a43fd743857e234d6566f7d, type: 3}
 --- !u!1 &6593753166961476522 stripped

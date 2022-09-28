@@ -171,6 +171,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree 2 With Grass
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d0207b6dfb6e6aa44bd20f3f2fbe2971,
+        type: 3}
+      propertyPath: m_TagString
+      value: ObjectToDelete
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0207b6dfb6e6aa44bd20f3f2fbe2971, type: 3}
 --- !u!1 &3607638552065568471 stripped
