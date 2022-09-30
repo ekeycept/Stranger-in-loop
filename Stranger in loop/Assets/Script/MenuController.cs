@@ -15,9 +15,4 @@ public class MenuController : MonoBehaviour
         Debug.Log("Need to go?");
         Application.Quit();
     }
-
-    public void ToCustomize()
-    {
-
-    }
 }

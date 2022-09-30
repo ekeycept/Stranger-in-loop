@@ -14,8 +14,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int jumpHeight = 2;
     [SerializeField] private float gravity = -9.8f;
     [SerializeField] private float checkGroundRadius = 0.4f;
+
     [SerializeField] private LayerMask groundMask;
     [SerializeField] private Transform groundCheckerPivot;
+
     [SerializeField] private Joystick joystick;
     [SerializeField] private GameObject jumpButton;
     [SerializeField] private Button RestartButton;

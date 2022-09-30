@@ -1617,6 +1617,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11ca879834df1f546935a9459549998d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numberOfStartedPlatforms: 25
+  numberOfNeededDecorPlat: 10
+  numberOfStartedThings: 100
   pastPlatformPrefab:
   - {fileID: 7554598837188951647, guid: dd5feda6afea17941a51a1d50edd3904, type: 3}
   - {fileID: 1651315522642021280, guid: b773d6d12894b7b48b43afa53c6f9587, type: 3}
@@ -1638,113 +1641,31 @@ MonoBehaviour:
   - {fileID: 3722826691688282971, guid: 73c2675f235348542be0d1a1690c319f, type: 3}
   - {fileID: 7094874543823310901, guid: 96cc2a7b3d0285246af3191e88e27fad, type: 3}
   - {fileID: 5365808531141653674, guid: 481c52abc7a0be244ac3c038b0516deb, type: 3}
-  decoratingThingsPrefab:
+  pastDecoratingThingsPrefab:
   - {fileID: 8745347592673033205, guid: 7b5bf460510c5c3459f1cf509b8be350, type: 3}
   - {fileID: 484469576043222752, guid: 2d5d50de85b6f4c4f8631f7337b42cd7, type: 3}
   - {fileID: 3381514841966668030, guid: 719af3ce5e15e184fb183cce166b9cce, type: 3}
   - {fileID: 28577604321948172, guid: cc815dc10ee09f24b80207b2fdf6dad5, type: 3}
-  - {fileID: 7703865583760573128, guid: e90e6b5ebdc84c041af48214488c570e, type: 3}
-  - {fileID: 6593753166961476522, guid: b082a604db3e14c4fa929cec83723adc, type: 3}
+  presentDecoratingThingsPrefab:
   - {fileID: 5807558643007230006, guid: bd3adc7721aed26469a17bc4239fce95, type: 3}
-  - {fileID: 3935772027355672806, guid: ee6950f80d9a7d34ba63d63ab965b290, type: 3}
-  - {fileID: 2820038850309923462, guid: 20cb3c9871b5fd244b70c465b3e4491f, type: 3}
-  - {fileID: 4730444877633324822, guid: 566908ebb551c024fb0e51cce2718ec9, type: 3}
-  - {fileID: 1720822222304706353, guid: a03a1ccee2664144fa606315afc85205, type: 3}
   - {fileID: 157846266174376910, guid: f32b7d41c1f4cd74da7a7d34a9322e2f, type: 3}
-  - {fileID: 8458886402736145508, guid: c534caa28fedb9447b20c39c38b39e14, type: 3}
-  - {fileID: 8862953959613033948, guid: a2ade072d0fa47343be4799815e39e3f, type: 3}
+  - {fileID: 1720822222304706353, guid: a03a1ccee2664144fa606315afc85205, type: 3}
   - {fileID: 861920756362391034, guid: fc0352c44edc6104986d99191e2ca23b, type: 3}
-  platforms:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 3935772027355672806, guid: ee6950f80d9a7d34ba63d63ab965b290, type: 3}
+  - {fileID: 4730444877633324822, guid: 566908ebb551c024fb0e51cce2718ec9, type: 3}
+  futureDecoratingThingsPrefab:
+  - {fileID: 6593753166961476522, guid: b082a604db3e14c4fa929cec83723adc, type: 3}
+  - {fileID: 2820038850309923462, guid: 20cb3c9871b5fd244b70c465b3e4491f, type: 3}
+  - {fileID: 2820038850309923462, guid: 20cb3c9871b5fd244b70c465b3e4491f, type: 3}
+  pastDecoratingPlatformsPrefab:
+  - {fileID: 220649707702483071, guid: 5d8b7f1b11802a248b81a06e3062f41d, type: 3}
+  - {fileID: 8109463751324997537, guid: ce37323f81cb75a4dbc44cebf0876a00, type: 3}
+  presentDecoratingPlatformsPrefab:
+  - {fileID: 4575626275270501538, guid: c6064dc171d94364c85acee503d1df11, type: 3}
+  - {fileID: 3607638552065568471, guid: 5556add12c4702c48bf8374a431bd55c, type: 3}
+  futureDecoratingPlatformsPrefab:
+  - {fileID: 2820038850309923462, guid: 20cb3c9871b5fd244b70c465b3e4491f, type: 3}
+  decoratingPlatforms:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -1856,7 +1777,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  decoratingPlatforms:
+  platforms:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -1882,87 +1803,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  decoratingPlatformsPrefab:
-  - {fileID: 8109463751324997537, guid: ce37323f81cb75a4dbc44cebf0876a00, type: 3}
-  - {fileID: 3607638552065568471, guid: 5556add12c4702c48bf8374a431bd55c, type: 3}
   Score: {fileID: 573204487}
   Player: {fileID: 2047073736}
-  lastPos: 0
 --- !u!114 &1471857749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2597,8 +2439,8 @@ MonoBehaviour:
   groundCheckerPivot: {fileID: 1692196050}
   joystick: {fileID: 286737705}
   jumpButton: {fileID: 0}
-  RestartButton: {fileID: 0}
-  ExitButton: {fileID: 0}
+  RestartButton: {fileID: 930596109}
+  ExitButton: {fileID: 1570414522}
 --- !u!143 &2047073738
 CharacterController:
   m_ObjectHideFlags: 0
