@@ -28,8 +28,9 @@ public class LevelCreator : MonoBehaviour
     private int randomMovingTile;
     private int randomSide;
     private int k = 1;
-    int startPos = 0;
-    int g = 1;
+    private int startPos = 0;
+    private int g = 1;
+    private int previousPos = 0;
 
     void Start()
     {
@@ -88,41 +89,29 @@ public class LevelCreator : MonoBehaviour
         if (currentPos <= 200)
         {
             if ((currentPos - lastPos) >= 25)
-            {
                 AddPlatforms(pastPlatformPrefab, currentPos, ref lastPos);
-            }
+            if (currentPos - previousPos >= 99)
+                AddDecoratingThings(decoratingThingsPrefab, currentPos, ref previousPos, k);
             if (currentPos - startPos >= 99)
-            {
-                AddDecoratingThings(decoratingThingsPrefab, currentPos, ref startPos, k);
                 AddDecoratingPlatforms(decoratingPlatformsPrefab, currentPos, ref lastPos);
-                startPos += 100;
-            }
         }
         else if (currentPos > 200 && currentPos < 400)
         {
             if ((currentPos - lastPos) >= 25)
-            {
                 AddPlatforms(presentPlatformPrefab, currentPos, ref lastPos);
-            }
+            if (currentPos - previousPos >= 99)
+                AddDecoratingThings(decoratingThingsPrefab, currentPos, ref previousPos, k);
             if (currentPos - startPos >= 99)
-            {
-                AddDecoratingThings(decoratingThingsPrefab, currentPos, ref startPos, k);
                 AddDecoratingPlatforms(decoratingPlatformsPrefab, currentPos, ref lastPos);
-                startPos += 100;
-            }
         }
         else if (currentPos > 400)
         {
             if ((currentPos - lastPos) >= 25)
-            {
-                AddPlatforms(futurePlatformPrefab, currentPos, ref lastPos);
-            }
+                AddPlatforms(presentPlatformPrefab, currentPos, ref lastPos);
+            if (currentPos - previousPos >= 99)
+                AddDecoratingThings(decoratingThingsPrefab, currentPos, ref previousPos, k);
             if (currentPos - startPos >= 99)
-            {
-                AddDecoratingThings(decoratingThingsPrefab, currentPos, ref startPos, k);
                 AddDecoratingPlatforms(decoratingPlatformsPrefab, currentPos, ref lastPos);
-                startPos += 100;
-            }
         }
     }
 
@@ -152,7 +141,7 @@ public class LevelCreator : MonoBehaviour
             lastPos = currentPos;
     }
 
-    private void AddDecoratingThings(GameObject[] prefab, int currentPos, ref int startPos, int k)
+    private void AddDecoratingThings(GameObject[] prefab, int currentPos, ref int previousPos, int k)
     {
             Array.Resize(ref decoratingThings, decoratingThings.Length + 100);
             for (int i = 0; i < 100; i++)
@@ -181,6 +170,7 @@ public class LevelCreator : MonoBehaviour
             }
             k++;
             Debug.Log("Created decorating platforms!" + "" + k);
+            previousPos += 100;
     }
 
     private void AddDecoratingPlatforms(GameObject[] prefab, int currentPos, ref int startPos)
@@ -201,7 +191,8 @@ public class LevelCreator : MonoBehaviour
                     randomX = UnityEngine.Random.Range(20, 40);
                     decoratingPlatforms[10 * g + i] = Instantiate(prefab[randomPrefab], new Vector3(randomX, 10, decoratingPlatforms[10 * g - 1 + i].transform.position.z + 50), Quaternion.Euler(-90, 0, 0));
                 }
-                g++;
             }
+            g++;
+        startPos += 100;
     }
 }

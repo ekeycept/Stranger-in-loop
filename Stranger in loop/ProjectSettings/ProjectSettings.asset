@@ -155,6 +155,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
+    Android: com.DefaultCompany.Strangerinloop
     Standalone: com.DefaultCompany.Stranger-in-loop
   buildNumber:
     Standalone: 0
