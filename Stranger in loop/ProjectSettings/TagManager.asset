@@ -8,6 +8,8 @@ TagManager:
   - DeathPlatform
   - LevelManager
   - ObjectToDelete
+  - Music
+  - Character
   layers:
   - Default
   - TransparentFX

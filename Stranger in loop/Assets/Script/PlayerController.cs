@@ -22,16 +22,23 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject jumpButton;
     [SerializeField] private Button RestartButton;
     [SerializeField] private Button ExitButton;
+    
+    private Animator animator;
+    public bool isJumping = false;
+    public bool isRunning = false;
     private void Awake()
     {
         _CharacterController = GetComponent<CharacterController>();
+        animator = GameObject.FindGameObjectWithTag("Character").GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         if (IsOnTheGround() && velocity < 0)
+        {
             velocity = -2;
+        }
         Move(moveDirection);
         Move(moveDirection2);
         DoGravity();
@@ -42,8 +49,15 @@ public class PlayerController : MonoBehaviour
         moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         moveDirection2 = new Vector3(joystick.Horizontal, 0, joystick.Vertical);
 
+        if (moveDirection != new Vector3(0, 0, 0) || moveDirection2 != new Vector3(0, 0, 0))
+            animator.SetBool("isRunning", true);
+        else
+            animator.SetBool("isRunning", false);
+
         if (Input.GetKeyDown(KeyCode.Space) && IsOnTheGround())
+        {
             Jump();
+        }
     }
 
     private bool IsOnTheGround()

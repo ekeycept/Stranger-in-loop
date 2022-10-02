@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MusicController : MonoBehaviour
 {
-    private AudioSource audioTrack;
+    public AudioSource audioTrack;
     [SerializeField] private AudioClip[] Tracks;
     int trackNumber = 0;
     void Start()
