@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     private float velocity;
 
     [SerializeField] private int speed = 10;
-    [SerializeField] private int jumpHeight = 2;
+    [SerializeField] private float jumpHeight = 2;
     [SerializeField] private float gravity = -9.8f;
     [SerializeField] private float checkGroundRadius = 0.4f;
 
@@ -26,8 +26,10 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
     public bool isJumping = false;
     public bool isRunning = false;
+    private bool isDestroyed = false;
     private void Awake()
     {
+        isDestroyed = false;
         _CharacterController = GetComponent<CharacterController>();
         animator = GameObject.FindGameObjectWithTag("Character").GetComponent<Animator>();
     }
@@ -35,13 +37,16 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (IsOnTheGround() && velocity < 0)
+        if (isDestroyed == false)
         {
-            velocity = -2;
+            if (IsOnTheGround() && velocity < 0)
+            {
+                velocity = -2;
+            }
+            Move(moveDirection);
+            Move(moveDirection2);
+            DoGravity();
         }
-        Move(moveDirection);
-        Move(moveDirection2);
-        DoGravity();
     }
 
     private void Update()
@@ -87,6 +92,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("DeathPlatform"))
         {
+            isDestroyed = true;
             Destroy(gameObject);
             RestartButton.gameObject.SetActive(true);
             ExitButton.gameObject.SetActive(true);

@@ -93,34 +93,37 @@ public class LevelCreator : MonoBehaviour
 
     private void Update()
     {
-        int currentPos = Convert.ToInt32(Player.position.z / 4.6f);
+        if (Player != null)
+        {
+            int currentPos = Convert.ToInt32(Player.position.z / 4.6f);
 
-        if (currentPos <= 200)
-        {
-            if ((currentPos - lastPos) >= 25)
-                AddPlatforms(pastPlatformPrefab, currentPos, ref lastPos);
-            if (currentPos - previousPos >= 99)
-                AddDecoratingThings(pastDecoratingThingsPrefab, ref previousPos, k);
-            if (currentPos - startPos >= 99)
-                AddDecoratingPlatforms(pastDecoratingPlatformsPrefab, ref startPos, g);
-        }
-        else if (currentPos > 200 && currentPos < 400)
-        {
-            if ((currentPos - lastPos) >= 25)
-                AddPlatforms(presentPlatformPrefab, currentPos, ref lastPos);
-            if (currentPos - previousPos >= 99)
-                AddDecoratingThings(presentDecoratingThingsPrefab, ref previousPos, k);
-            if (currentPos - startPos >= 99)
-                AddDecoratingPlatforms(presentDecoratingPlatformsPrefab, ref startPos, g);
-        }
-        else if (currentPos > 400)
-        {
-            if ((currentPos - lastPos) >= 25)
-                AddPlatforms(futurePlatformPrefab, currentPos, ref lastPos);
-            if (currentPos - previousPos >= 99)
-                AddDecoratingThings(futureDecoratingThingsPrefab, ref previousPos, k);
-            if (currentPos - startPos >= 99)
-                AddDecoratingPlatforms(futureDecoratingPlatformsPrefab, ref startPos, g);
+            if (currentPos <= 200)
+            {
+                if ((currentPos - lastPos) >= 25)
+                    AddPlatforms(pastPlatformPrefab, currentPos, ref lastPos);
+                if (currentPos - previousPos >= 99)
+                    AddDecoratingThings(pastDecoratingThingsPrefab, ref previousPos, k);
+                if (currentPos - startPos >= 99)
+                    AddDecoratingPlatforms(pastDecoratingPlatformsPrefab, ref startPos, g);
+            }
+            else if (currentPos > 200 && currentPos < 400)
+            {
+                if ((currentPos - lastPos) >= 25)
+                    AddPlatforms(presentPlatformPrefab, currentPos, ref lastPos);
+                if (currentPos - previousPos >= 99)
+                    AddDecoratingThings(presentDecoratingThingsPrefab, ref previousPos, k);
+                if (currentPos - startPos >= 99)
+                    AddDecoratingPlatforms(presentDecoratingPlatformsPrefab, ref startPos, g);
+            }
+            else if (currentPos > 400)
+            {
+                if ((currentPos - lastPos) >= 25)
+                    AddPlatforms(futurePlatformPrefab, currentPos, ref lastPos);
+                if (currentPos - previousPos >= 99)
+                    AddDecoratingThings(futureDecoratingThingsPrefab, ref previousPos, k);
+                if (currentPos - startPos >= 99)
+                    AddDecoratingPlatforms(futureDecoratingPlatformsPrefab, ref startPos, g);
+            }
         }
     }
 

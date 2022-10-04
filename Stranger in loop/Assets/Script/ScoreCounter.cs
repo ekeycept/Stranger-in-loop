@@ -11,7 +11,10 @@ public class ScoreCounter : MonoBehaviour
     [SerializeField] private GameObject Player;
     void Update()
     {
-        int score = Convert.ToInt32(Player.transform.position.z / 4.6f);
-        ScoreText.text = Convert.ToString(score);
+        if (Player != null)
+        {
+            int score = Convert.ToInt32(Player.transform.position.z / 4.6f);
+            ScoreText.text = Convert.ToString(score);
+        }
     }
 }
