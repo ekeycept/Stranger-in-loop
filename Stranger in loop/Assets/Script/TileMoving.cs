@@ -27,5 +27,10 @@ public class TileMoving : MonoBehaviour
             transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y, transform.position.z);
     }
 
+    public void SpeedUp()
+    {
+        speed += 3f;
+    }
+
 
 }

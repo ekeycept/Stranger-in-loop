@@ -24,6 +24,7 @@ public class LevelCreator : MonoBehaviour
 
     [SerializeField] private Text Score;
     [SerializeField] private Transform Player;
+    bool isFirstRun = true;
 
     private int randomPrefab;
     private int randomX;
@@ -114,6 +115,17 @@ public class LevelCreator : MonoBehaviour
                     AddDecoratingThings(futureDecoratingThingsPrefab, futureDecoratingThingsPrefab.Length, ref previousPos, k);
                 if (currentPos - startPos >= 99)
                     AddDecoratingPlatforms(futureDecoratingPlatformsPrefab, futureDecoratingPlatformsPrefab.Length, ref startPos, g);
+            }
+            if (currentPos == 200 && isFirstRun)
+            {
+                for (int i = 0; i < platforms.Length; i++)
+                {
+                    if (platforms[i] != null && platforms[i].GetComponent<TileMoving>())
+                    {
+                        platforms[i].GetComponent<TileMoving>().SpeedUp();
+                        isFirstRun = false;
+                    }                
+                }
             }
         }
     }
