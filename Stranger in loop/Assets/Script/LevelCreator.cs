@@ -97,32 +97,23 @@ public class LevelCreator : MonoBehaviour
         {
             int currentPos = Convert.ToInt32(Player.position.z / 4.6f);
 
-            if (currentPos <= 200)
-            {
-                if ((currentPos - lastPos) >= 25)
-                    AddPlatforms(pastPlatformPrefab, currentPos, ref lastPos);
-                if (currentPos - previousPos >= 99)
-                    AddDecoratingThings(pastDecoratingThingsPrefab, ref previousPos, k);
-                if (currentPos - startPos >= 99)
-                    AddDecoratingPlatforms(pastDecoratingPlatformsPrefab, ref startPos, g);
-            }
-            else if (currentPos > 200 && currentPos < 400)
+            if (currentPos < 100)
             {
                 if ((currentPos - lastPos) >= 25)
                     AddPlatforms(presentPlatformPrefab, currentPos, ref lastPos);
                 if (currentPos - previousPos >= 99)
-                    AddDecoratingThings(presentDecoratingThingsPrefab, ref previousPos, k);
+                    AddDecoratingThings(presentDecoratingThingsPrefab, presentDecoratingThingsPrefab.Length, ref previousPos, k);
                 if (currentPos - startPos >= 99)
-                    AddDecoratingPlatforms(presentDecoratingPlatformsPrefab, ref startPos, g);
+                    AddDecoratingPlatforms(presentDecoratingPlatformsPrefab, presentDecoratingPlatformsPrefab.Length, ref startPos, g);
             }
-            else if (currentPos > 400)
+            else if (currentPos > 100)
             {
                 if ((currentPos - lastPos) >= 25)
                     AddPlatforms(futurePlatformPrefab, currentPos, ref lastPos);
                 if (currentPos - previousPos >= 99)
-                    AddDecoratingThings(futureDecoratingThingsPrefab, ref previousPos, k);
+                    AddDecoratingThings(futureDecoratingThingsPrefab, futureDecoratingThingsPrefab.Length, ref previousPos, k);
                 if (currentPos - startPos >= 99)
-                    AddDecoratingPlatforms(futureDecoratingPlatformsPrefab, ref startPos, g);
+                    AddDecoratingPlatforms(futureDecoratingPlatformsPrefab, futureDecoratingPlatformsPrefab.Length, ref startPos, g);
             }
         }
     }
@@ -153,7 +144,7 @@ public class LevelCreator : MonoBehaviour
         lastPos = currentPos;
     }
 
-    private void AddDecoratingThings(GameObject[] prefab, ref int previousPos, int k)
+    private void AddDecoratingThings(GameObject[] prefab, int prefabLength,  ref int previousPos, int k)
     {
         Array.Resize(ref decoratingThings, decoratingThings.Length + 100);
         for (int i = 0; i < numberOfStartedThings; i++)
@@ -161,7 +152,7 @@ public class LevelCreator : MonoBehaviour
             randomSide = UnityEngine.Random.Range(0, 2);
             if (randomSide == 0)
             {
-                 randomPrefab = UnityEngine.Random.Range(0, 4);
+                 randomPrefab = UnityEngine.Random.Range(0, prefabLength);
                  randomX = UnityEngine.Random.Range(-25, -15);
                  randomY = UnityEngine.Random.Range(-10, 10);
                  randomRotX = UnityEngine.Random.Range(-90, 90);
@@ -171,7 +162,7 @@ public class LevelCreator : MonoBehaviour
             }
             if (randomSide == 1)
             {
-                randomPrefab = UnityEngine.Random.Range(0, 4);
+                randomPrefab = UnityEngine.Random.Range(0, prefabLength);
                 randomX = UnityEngine.Random.Range(15, 25);
                 randomY = UnityEngine.Random.Range(-10, 10);
                 randomRotX = UnityEngine.Random.Range(-90, 90);
@@ -185,7 +176,7 @@ public class LevelCreator : MonoBehaviour
         previousPos += 100;
     }
 
-    private void AddDecoratingPlatforms(GameObject[] prefab, ref int startPos, int g)
+    private void AddDecoratingPlatforms(GameObject[] prefab, int prefabLength, ref int startPos, int g)
     {
         Array.Resize(ref decoratingPlatforms, decoratingPlatforms.Length + 10);
         for (int i = 0; i < numberOfNeededDecorPlat; i++)
@@ -193,13 +184,13 @@ public class LevelCreator : MonoBehaviour
             randomSide = UnityEngine.Random.Range(0, 2);
             if (randomSide == 0)
             {
-                randomPrefab = UnityEngine.Random.Range(0, 2);
+                randomPrefab = UnityEngine.Random.Range(0, prefabLength);
                 randomX = UnityEngine.Random.Range(-40, -20);
                 decoratingPlatforms[numberOfNeededDecorPlat * g + i] = Instantiate(prefab[randomPrefab], new Vector3(randomX, 10, decoratingPlatforms[numberOfNeededDecorPlat * g - 1 + i].transform.position.z + 50), Quaternion.Euler(-90, 0, 0));
             }
             if (randomSide == 1)
             {
-                randomPrefab = UnityEngine.Random.Range(0, 2);
+                randomPrefab = UnityEngine.Random.Range(0, prefabLength);
                 randomX = UnityEngine.Random.Range(20, 40);
                 decoratingPlatforms[numberOfNeededDecorPlat * g + i] = Instantiate(prefab[randomPrefab], new Vector3(randomX, 10, decoratingPlatforms[numberOfNeededDecorPlat * g - 1 + i].transform.position.z + 50), Quaternion.Euler(-90, 0, 0));
             }

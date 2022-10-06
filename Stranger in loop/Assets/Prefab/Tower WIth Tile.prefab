@@ -175,10 +175,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4357596403218689640, guid: 4cbd5f59978a4c44296e0032bb17dcf1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7268847876199998366, guid: 4cbd5f59978a4c44296e0032bb17dcf1,
         type: 3}
       propertyPath: m_Name
-      value: tower Variant Variant
+      value: Tower WIth Tile
       objectReference: {fileID: 0}
     - target: {fileID: 8046791297848097060, guid: 4cbd5f59978a4c44296e0032bb17dcf1,
         type: 3}
@@ -234,6 +239,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9024607962737576399, guid: 4cbd5f59978a4c44296e0032bb17dcf1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cbd5f59978a4c44296e0032bb17dcf1, type: 3}

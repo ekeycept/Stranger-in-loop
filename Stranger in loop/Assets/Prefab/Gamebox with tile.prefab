@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 2820038850309923462, guid: 20cb3c9871b5fd244b70c465b3e4491f,
         type: 3}
       propertyPath: m_Name
-      value: gamebox Variant
+      value: Gamebox with tile
       objectReference: {fileID: 0}
     - target: {fileID: 3200118457579763772, guid: 20cb3c9871b5fd244b70c465b3e4491f,
         type: 3}

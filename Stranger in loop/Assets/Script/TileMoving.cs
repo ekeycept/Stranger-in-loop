@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TileMoving : MonoBehaviour
 {
-    private float speed = 5f;
+    private float speed = 3f;
     public float rightEnd { get;  set; }
     public float leftEnd { get; set; }
     private bool isMovingRight = false;

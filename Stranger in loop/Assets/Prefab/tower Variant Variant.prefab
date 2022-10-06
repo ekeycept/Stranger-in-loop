@@ -10,7 +10,12 @@ PrefabInstance:
     - target: {fileID: 8458886402736145508, guid: c534caa28fedb9447b20c39c38b39e14,
         type: 3}
       propertyPath: m_Name
-      value: tower Variant
+      value: tower Variant Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458886402736145508, guid: c534caa28fedb9447b20c39c38b39e14,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9092715906807111390, guid: c534caa28fedb9447b20c39c38b39e14,
         type: 3}

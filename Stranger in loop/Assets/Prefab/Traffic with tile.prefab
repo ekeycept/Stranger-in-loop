@@ -149,7 +149,12 @@ PrefabInstance:
     - target: {fileID: 8862953959613033948, guid: a2ade072d0fa47343be4799815e39e3f,
         type: 3}
       propertyPath: m_Name
-      value: traffic light Variant
+      value: Traffic with tile
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862953959613033948, guid: a2ade072d0fa47343be4799815e39e3f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2ade072d0fa47343be4799815e39e3f, type: 3}
