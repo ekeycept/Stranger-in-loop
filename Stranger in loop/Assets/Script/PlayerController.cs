@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -27,6 +28,12 @@ public class PlayerController : MonoBehaviour
     public bool isJumping = false;
     public bool isRunning = false;
     private bool isDestroyed = false;
+
+    public InterstitialsAds IntAds;
+
+    [SerializeField] private Camera secondCamera;
+    [SerializeField] private AudioSource music;
+
     private void Awake()
     {
         isDestroyed = false;
@@ -93,6 +100,9 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("DeathPlatform"))
         {
             isDestroyed = true;
+            music.Stop();
+            IntAds.ShowAd();
+            secondCamera.gameObject.SetActive(true);
             Destroy(gameObject);
             RestartButton.gameObject.SetActive(true);
             ExitButton.gameObject.SetActive(true);

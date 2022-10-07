@@ -132,7 +132,7 @@ public class LevelCreator : MonoBehaviour
 
     private void AddPlatforms(GameObject[] prefabs, int currentPos, ref int lastPos)
     {
-        Array.Resize(ref platforms, platforms.Length + 25);
+        Array.Resize(ref platforms, platforms.Length + numberOfStartedPlatforms);
         for (i = 0; i < numberOfStartedPlatforms; i++)
         {
              randomMovingTile = UnityEngine.Random.Range(0, 2);
@@ -158,7 +158,7 @@ public class LevelCreator : MonoBehaviour
 
     private void AddDecoratingThings(GameObject[] prefab, int prefabLength,  ref int previousPos, int k)
     {
-        Array.Resize(ref decoratingThings, decoratingThings.Length + 100);
+        Array.Resize(ref decoratingThings, decoratingThings.Length + numberOfStartedThings);
         for (int i = 0; i < numberOfStartedThings; i++)
         {
             randomSide = UnityEngine.Random.Range(0, 2);
@@ -190,7 +190,7 @@ public class LevelCreator : MonoBehaviour
 
     private void AddDecoratingPlatforms(GameObject[] prefab, int prefabLength, ref int startPos, int g)
     {
-        Array.Resize(ref decoratingPlatforms, decoratingPlatforms.Length + 10);
+        Array.Resize(ref decoratingPlatforms, decoratingPlatforms.Length + numberOfNeededDecorPlat);
         for (int i = 0; i < numberOfNeededDecorPlat; i++)
         {
             randomSide = UnityEngine.Random.Range(0, 2);
